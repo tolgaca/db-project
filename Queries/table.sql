@@ -1,3 +1,7 @@
+/*
+ Create, Insert, Update, Delete
+ */
+
 create table address(
     address_id integer primary key,
     address varchar(50) not null,
