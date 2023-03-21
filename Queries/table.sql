@@ -1,5 +1,5 @@
 /*
- Create, Insert, Update, Delete
+ Create, Insert, Update, Delete, Alter, Commit
  */
 
 create table address(
@@ -29,3 +29,26 @@ update customer set customer_id = 3 where address_id = 12;
 
 delete from customer where customer_id =3 and address_id= 12;
 
+commit work;
+
+select * from customer;
+
+--add columns:
+alter table customer add LastName varchar(20);
+
+--rename column:
+alter table  customer rename column LastName to City;
+
+update  customer set city = 'Miami' where firstName = 'Muhtar';
+update  customer set city = 'Colorado' where firstName = 'John';
+
+--drop column
+alter table  customer drop column CITY;
+
+--rename table:
+alter  table customer rename to Shoppers;
+
+select * from customer; --gone
+select * from Shoppers; --new name of table
+
+commit work;
