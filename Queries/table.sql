@@ -1,5 +1,7 @@
 /*
- Create, Insert, Update, Delete, Alter, Commit
+ Create, Insert, Update, Delete,
+ Alter, Commit
+ Drop, Truncate
  */
 
 create table address(
@@ -50,5 +52,15 @@ alter  table customer rename to Shoppers;
 
 select * from customer; --gone
 select * from Shoppers; --new name of table
+
+commit work;
+
+select * from SHOPPERS;
+drop table SHOPPERS;
+
+select * from address;
+truncate table address;
+
+drop table address;
 
 commit work;
