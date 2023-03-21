@@ -25,5 +25,4 @@ INSERT INTO customer (customer_id, first_name, last_name, address_id) VALUES (3,
 INSERT INTO customer (customer_id, first_name, last_name, address_id) VALUES (4, 'Barbara' ,  'Jones' , 8);
 INSERT INTO customer (customer_id, first_name, last_name, address_id) VALUES (5,  'Elizabeth' ,  'Brown' ,  NULL);
 
-
 commit work;
